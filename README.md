@@ -1,12 +1,6 @@
-# COMP790-101: Large Language Models
+# Data Science Seminar: Seminar Machine Learning - Large Language Models
 
-Instructor: [Colin Raffel](http://colinraffel.com)
-
-Meeting time: Mondays and Wednesdays, 1:25-2:40pm
-
-Classroom: SN 011
-
-Office hours: By appointment
+Instructor: [Ricardo Usbeck](https://orcid.org/0000-0002-0191-7211)
 
 Language models, which are trained to predict text given other text, underly many recent successes in natural language processing and artificial intelligence.
 Whether used for transfer learning (using language modeling as a pre-training objective before subsequent fine-tuning on a downstream task) or prompting (formulating an input sequence that induces a model to perform a desired task without any training), language modeling has proven to be an effective way of imbuing models with useful capabailities.
@@ -22,16 +16,14 @@ Before taking the class, you should be able to read a recent machine learning or
 ## Course Structure
 
 This class will use a [role-playing seminar](https://colinraffel.com/blog/role-playing-seminar.html) format where students take on different roles and present papers to one another.
-All grading will be based on these presentations and course participation; there will be final project or other coursework.
+All grading will be based on these presentations and course participation; there will be a final poster. 
 
 ### Readings
 
 Each class will involve the presentation and discussion of two papers.
-The pair of papers covered in each class session are meant to complement each other, e.g. because one paper might be the historical precedent of the other, or the papers were contempraneous, or they present different viewpoints on the same topic.
+The pair of papers covered in each class session are meant to complement each other, e.g. because one paper might be the historical precedent of the other, or the papers were contemporary, or they present different viewpoints on the same topic.
 Before each class, everyone is required to have read both papers.
-Students will be divided into four groups.
-Two groups will present on Mondays and the other two groups will present on Wednesdays.
-In a given class session, students in the presenting groups will each be given a rotating role (described below).
+Students will be assigned roles.
 This role defines the lens through which they read the paper and determines what they prepare for the in-class discussion.
 Students in the non-presenting groups are also required to read the papers, complete a quick exercise (described below), and come to class ready to discuss.
 All students will obtain a thorough understanding of the chosen papers and will develop their paper reading, literature review, and prototyping skills.
@@ -41,17 +33,22 @@ All students will obtain a thorough understanding of the chosen papers and will 
 This seminar is organized around the different "roles" students play each week:
 Reviewer, Archaeologist, Researcher, Hacker, Diagrammer, and (possibly) Blogger.
 
-  - **Reviewer:** Complete a full critical, but not necessarily negative, review of the paper. Follow the [guidelines for NeurIPS reviewers](https://neurips.cc/Conferences/2022/ReviewerGuidelines) (under "Review Form"). Please complete the "Strengths and Weaknesses" and "Questions" sections and assign an overall score; you can skip the rest of the review (including writing a summary since all students should have read the paper).
-  - **Archaeologist:** Determine where this paper sits in the context of previous and subsequent work. Find and report on one prior paper *that we are not reading in this class* that substantially influenced the current paper **or** one newer paper *that we are not reading in this class* that was heavily influenced by the current paper.
-  - **Hacker:** Implement a small part of the paper on a small dataset or toy problem. Prepare to share the core code of the algorithm to the class. Do not simply download and run an existing implementation - you should implement at least a (toy version of a) method from the paper, though you are welcome to use (and give credit to) an existing implementation for "backbone" code (e.g. model building, data loading, training loop, etc.).
+  - **Scientific Peer Reviewers:** Complete a full critical, but not necessarily negative, review of the paper. Follow the [guidelines for NeurIPS reviewers](https://neurips.cc/Conferences/2022/ReviewerGuidelines) (under "Review Form"). Please complete the "Strengths and Weaknesses" and "Questions" sections and assign an overall score; you can skip the rest of the review (including writing a summary since all students should have read the paper).
+  - **Archaeologist:** Could you determine where this paper sits in the context of previous and subsequent work? Find and report on one prior paper *that we are not reading in this class* that substantially influenced the current paper **or** one newer paper *that we are not reading in this class* that was heavily influenced by the current paper.
+  - **Academic Researcher:** You’re a researcher who is working on a new project in this area. Propose an imaginary follow-up project not just based on the current but only possible due to the existence and success of the current paper.
+  - **Industry Practitioner:** You work at a company or organization developing an application or product of your choice (that has not already been suggested in a prior session). Bring a convincing pitch for why you should be paid to implement the method in the paper and discuss at least one positive and negative impact of this application.
+  - **Private Investigator:** You are a detective who needs to run a background check on one of the paper’s authors. Where have they worked? What did they study? What previous projects might have led to working on this one? What motivated them to work on this project? Feel free to contact the authors, but remember to be courteous, polite, and on-topic.
+  - **Hacker:** Implement a small part of the paper on a small dataset or toy problem. Prepare to share the core code of the algorithm to the class. Do not simply download and run an existing implementation - you should implement at least a (toy version of a) method from the paper. However, you are welcome to use (and give credit to) an existing implementation for "backbone" code (e.g. model building, data loading, training loop, etc.).
+  - **Social Impact and Sustainability Assessor** Identify how this paper self-assesses its (likely positive) impact on the world. Have any additional positive social impacts left out? What are possible negative social impacts that were overlooked or omitted?
  - **Diagrammer:** Create a diagram of one of the concepts or ideas from the paper or re-make one of the plots in the paper to make it clearer. Please pick something that hasn't already been diagrammed from a previous paper.
- - *Blogger:** Write a paragraph each about the two papers and an additional paragraph comparing and contrasting them. The summary of each paper should cover the motivation behind the paper, a description of any of the proposed methods, and an overview of the key findings. You should write a bit about how they are different and/or build on one another. The blogger will not present during the class session.
+ - **Blogger:** Write a paragraph each about the two papers and an additional paragraph comparing and contrasting them. The summary of each paper should cover the motivation behind the paper, a description of any of the proposed methods, and an overview of the key findings. You should write a bit about how they are different and/or build on one another. The blogger will not present during the class session.
 
 #### Non-presenter assignment
 
 If you aren't in the presenting group during a given class period, please submit before class:
   1. A new title for either one of the papers and/or a new name for an algorithm proposed in either paper
-  1. At least one question about either paper - could be something you're confused about or something you'd like to hear discussed more.
+  2. At least one question about either paper - could be something you're confused about or something you'd like to hear discussed more.
+  3. One idea for a missing experiment.
 
 ## Schedule
 
@@ -59,47 +56,30 @@ The schedule below includes a preliminary list of the papers we will be reading.
 These papers are subject to change, though I will try to make changes only to papers that are at least two weeks away.
 If you have any suggested changes, feel free to tell me.
 
-|    Date    |                                                                                  Group A Paper                                                                                  |                                                                                             Group B Paper                                                                                             |
-|:----------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|  Mon, 8/15 | Class introduction, background, logistics                                                                                                                                       | N/A                                                                                                                                                                                                   |
-|  Wed, 8/17 | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) (Colin presents)                                                                                                  | N/A                                                                                                                                                                                                   |
-|  Mon, 8/22 | [A Neural Probabilistic Language Model](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)                                                                                          | [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)                                                                                |
-|  Wed, 8/24 | [Generating Sequences With Recurrent Neural Networks](https://arxiv.org/abs/1308.0850)                                                                        | [Exploring the Limits of Language Modeling](https://arxiv.org/abs/1602.02410)                                                                                                                         |
-|  Mon, 8/29 | [Semi-supervised Sequence Learning](https://arxiv.org/abs/1511.01432)                                                                                                           | [Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/abs/1704.01444)                                                                                                            |
-|  Wed, 8/31 | [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146)                                                                                | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)                |
-|   Mon, 9/5 | No class (Labor Day)                                                                                                                                                            | N/A                                                                                                                                                                                                   |
-|   Wed, 9/7 | [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)                                                            | [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692)                                                                                                           |
-|  Mon, 9/12 | [ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators](https://arxiv.org/abs/2003.10555)                                                                | [DeBERTa: Decoding-enhanced BERT with Disentangled Attention](https://arxiv.org/abs/2006.03654)                                                                                                       |
-|  Wed, 9/14 | [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](https://arxiv.org/abs/1910.10683)                                                           | [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/abs/1905.03197)                                                                             |
-|  Mon, 9/19 | [Cross-lingual Language Model Pretraining](https://arxiv.org/abs/1901.07291)                                                                                                    | [ByT5: Towards a token-free future with pre-trained byte-to-byte models](https://arxiv.org/abs/2105.13626)                                                                                            |
-|  Wed, 9/21 | [Language Models are Unsupervised Multitask Learners](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)       | [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)                                                                                                                             |
-|  Mon, 9/26 | No class (well-being day)                                                                                                                                                       | N/A                                                                                                                                                                                                   |
-|  Wed, 9/28 | [Scaling Language Models: Methods, Analysis & Insights from Training Gopher](https://arxiv.org/abs/2112.11446)                                                                  | [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311)                                                                                                                     |
-|  Mon, 10/3 | [What Changes Can Large-scale Language Models Bring? Intensive Study on HyperCLOVA: Billions-scale Korean Generative Pretrained Transformers](https://arxiv.org/abs/2109.04650) | [ERNIE 3.0 Titan: Exploring Larger-scale Knowledge Enhanced Pre-training for Language Understanding and Generation](https://arxiv.org/abs/2112.12731)                                                 |
-|  Wed, 10/5 | [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)                                                                                                     | [Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556)                                                                                                                    |
-| Mon, 10/10 | [On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜](https://dl.acm.org/doi/10.1145/3442188.3445922)                                                       | [Release Strategies and the Social Impacts of Language Models](https://arxiv.org/abs/1908.09203)                                                                                                      |
-| Wed, 10/12 | [RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models](https://arxiv.org/abs/2009.11462)                                                                | [TruthfulQA: Measuring How Models Mimic Human Falsehoods](https://arxiv.org/abs/2109.07958)                                                                                                           |
-| Mon, 10/17 | [The Pile: An 800GB Dataset of Diverse Text for Language Modeling](https://arxiv.org/abs/2101.00027)                                                                            | [Documenting Large Webtext Corpora: A Case Study on the Colossal Clean Crawled Corpus](https://arxiv.org/abs/2104.08758)                                                                              |
-| Wed, 10/19 | [Extracting Training Data from Large Language Models](https://arxiv.org/abs/2012.07805)                                                                                         | [Deduplicating Training Data Makes Language Models Better](https://arxiv.org/abs/2107.06499)                                                                                                          |
-| Mon, 10/24 | [Language Models as Knowledge Bases?](https://arxiv.org/abs/1909.01066)                                                                                                         | [REALM: Retrieval-Augmented Language Model Pre-Training](https://arxiv.org/abs/2002.08909)                                                                                                            |
-| Wed, 10/26 | [Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference](https://arxiv.org/abs/2001.07676)                                                  | [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/abs/2104.08691)                                                                                                          |
-| Mon, 10/31 | [Multitask Prompted Training Enables Zero-Shot Task Generalization](https://arxiv.org/abs/2110.08207)                                                                           | [Benchmarking Generalization via In-Context Instructions on 1,600+ Language Tasks](https://arxiv.org/abs/2204.07705)                                                                                  |
-|  Wed, 11/2 | [Exploring and Predicting Transferability across NLP Tasks](https://arxiv.org/abs/2005.00770)                                                                                   | [Don't Stop Pretraining: Adapt Language Models to Domains and Tasks](https://arxiv.org/abs/2004.10964)                                                                                                |
-|  Mon, 11/7 | [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)                                                                         | [Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback](https://arxiv.org/abs/2204.05862)                                                                         |
-|  Wed, 11/9 | [How Many Data Points is a Prompt Worth?](https://arxiv.org/abs/2103.08493)                                                                                                     | [Do Prompt-Based Models Really Understand the Meaning of their Prompts?](https://arxiv.org/abs/2109.01247)                                                                                            |
-| Mon, 11/14 | [Calibrate Before Use: Improving Few-Shot Performance of Language Models](https://arxiv.org/abs/2102.09690)                                                                     | [Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?](https://arxiv.org/abs/2202.12837)                                                                                       |
-| Wed, 11/16 | [Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://arxiv.org/abs/1701.06538)                                                             | [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/abs/2101.03961)                                                                      |
-| Mon, 11/21 | [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020)                                                                       | [🦩 Flamingo: a Visual Language Model for Few-Shot Learning](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/tackling-multiple-tasks-with-a-single-visual-language-model/flamingo.pdf) |
-| Wed, 11/23 | No class (Thanksgiving break)                                                                                                                                                   | N/A                                                                                                                                                                                                   |
-| Mon, 11/28 | [Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM](https://arxiv.org/abs/2104.04473)                                                             | [DeepSpeed: Extreme-scale model training for everyone](https://www.microsoft.com/en-us/research/blog/deepspeed-extreme-scale-model-training-for-everyone/)                                            |
-| Wed, 11/30 | [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110)                                                       | [Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models](https://arxiv.org/abs/2206.04615)                                                                      |
-|  Sat, 12/3 | [GPT-NeoX-20B: An Open-Source Autoregressive Language Model](https://arxiv.org/abs/2204.06745)                                                                                  | [BLOOM: A 176B-Parameter Open-Access Multilingual Language Model](https://arxiv.org/abs/2211.05100)                                                                                                                 |
+                                                                                                     |
+
+https://twitter.com/DivGarg9/status/1659647858986078210
+https://github.com/XiaoxinHe/Awesome-Graph-LLM
+https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
+https://jalammar.github.io/how-gpt3-works-visualizations-animations/
+https://twitter.com/jure/status/1665726417345159168?t=achwstSN3fA__lkt5Cf8kg&s=09
+https://twitter.com/jure/status/1667182260108546048?t=K1Qckkaae4j4YSCgecGwpg&s=09
+https://ehudreiter.com/2021/08/09/exercise-find-problems-in-an-evaluation/
+https://twitter.com/manoelribeiro/status/1698838671427018860?t=T8Xlvx03X5ll6jwphfu8jA&s=09
+https://cameronrwolfe.me/home
+https://twitter.com/itsafiz/status/1700516308390166981?t=M8SzB769y1NRzoPCdpb9uQ&s=09
+https://www.lesswrong.com/posts/pHPmMGEMYefk9jLeh/llm-basics-embedding-spaces-transformer-token-vectors-are
+https://www.exxactcorp.com/blog/Deep-Learning/how-do-bert-transformers-work
+https://github.com/craffel/llm-seminar/
+https://twitter.com/ClementDelangue/status/1704180606119141432?t=OdvKVjHKWArdvcLz_rVQWA&s=09
+https://twitter.com/arankomatsuzaki/status/1704659155754103247?t=PmL4yRFlNb9Lo5JGUHybNw&s=09
+https://twitter.com/datta_cs/status/1706801950698909954?t=BXEGN8AgpNvCpfRuhzaNvA&s=09
+https://twitter.com/luke_ch_song/status/1709166264063553849?t=tLpVZLFgfw0Nz3qXGjzi4A&s=09
 
 ## Grading
 
-1. Presentations (84 points): For each class session where you are presenting, you will be graded out of 6 points. You will receive full credit if you do a thorough job of undertaking your role and present it in a clear and compelling way.
-1. Participation (14 points): For each class session where you aren't presenting, you'll be given up 1 point for completing the non-presenter assignment and attending and participating in class.
-1. Free points (2 points): All students get 2 free points!
+1. Presentations (up to 10 possibilities to be in a group): For each class session where you are presenting, you will be graded out of 10 points. You will receive full credit if you do a thorough job of undertaking your role and present it in a clear and compelling way. The score will be averaged.
+2. Discussion (up to 10 possibilities): For each class session where you aren't presenting, you'll be given up 1 point for completing the non-presenter assignment and attending and participating in class. The score will be calculated out of 10.
 
 ## Attendance, late work, and the honor code
 
@@ -121,22 +101,15 @@ I broadly define diversity to include race, gender identity, national origin, et
 I will strive to make this classroom an inclusive space for all students.
 Please let me know if there is anything I can do to improve.
 
-Acts of discrimination, harassment, interpersonal (relationship) violence, sexual violence, sexual exploitation, stalking, and related retaliation are prohibited at UNC-Chapel Hill.
+Acts of discrimination, harassment, interpersonal (relationship) violence, sexual violence, sexual exploitation, stalking, and related retaliation are prohibited.
 If you have experienced these types of conduct, you are encouraged to report the incident and seek resources on campus or in the community.
-Please contact the Director of Title IX Compliance/Title IX Coordinator (Adrienne Allison, adrienne.allison@unc.edu), Report and Response Coordinators (Ew Quimbaya-Winship, eqw@unc.edu; Rebecca Gibson, rmgibson@unc.edu; Kathryn Winn kmwinn@unc.edu), Counseling and Psychological Services (CAPs) (confidential) in Campus Health Services at (919) 966-3658, or the Gender Violence Services Coordinators (confidential) (Cassidy Johnson, cassidyjohnson@unc.edu; Holly Lovern, holly.lovern@unc.edu) to discuss your specific needs.
-Additional resources are available at http://safe.unc.edu.
-
-## Resources
-
-The University of North Carolina at Chapel Hill facilitates the implementation of reasonable accommodations, including resources and services, for students with disabilities, chronic medical conditions, a temporary disability or pregnancy complications resulting in barriers to fully accessing University courses, programs and activities.
-
-Accommodations are determined through the Office of Accessibility Resources and Service (ARS) for individuals with documented qualifying disabilities in accordance with applicable state and federal laws. See the ARS Website for contact information: https://ars.unc.edu or email ars@unc.edu.
-
-UNC-Chapel Hill is strongly committed to addressing the mental health needs of a diverse student body. The Heels Care Network website (https://care.unc.edu) is a place to access the many mental resources at Carolina. CAPS is the primary mental health provider for students, offering timely access to consultation and connection to clinically appropriate services. Go to their website https://caps.unc.edu/ or visit their facilities on the third floor of the Campus Health building for an initial evaluation to learn more. 
-
-Any student who is impacted by discrimination, harassment, interpersonal (relationship) violence, sexual violence, sexual exploitation, or stalking is encouraged to seek resources on campus or in the community. Reports can be made online to the EOC at https://eoc.unc.edu/report-an-incident/. Please contact the University’s Title IX Coordinator (Elizabeth Hall, interim – titleixcoordinator@unc.edu), Report and Response Coordinators in the Equal Opportunity and Compliance Office (reportandresponse@unc.edu), Counseling and Psychological Services (confidential), or the Gender Violence Services Coordinators (gvsc@unc.edu; confidential) to discuss your specific needs. Additional resources are available at safe.unc.edu.
+Please contact the Ombudsperson https://www.leuphana.de/en/university/organisation/ombudsperson.html to discuss your specific needs.
 
 ## Changes
 
-The professor reserves the right to make changes to the syllabus including project due dates and test dates. These changes will be announced as early as possible. 
+The professor reserves the right to make changes to the syllabus including project due dates. These changes will be announced as early as possible. 
+
+## Acknowledgements
+
+Thanks to [Colin Raffel](http://colinraffel.com) for providing this great idea for a seminar under [https://github.com/craffel/llm-seminar/](https://github.com/craffel/llm-seminar/)
 
