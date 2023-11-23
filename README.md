@@ -45,7 +45,7 @@ Reviewer, Archaeologist, Researcher, Hacker, Diagrammer, and (possibly) Blogger.
 
 #### Non-presenter assignment
 
-If you aren't in the presenting group during a given class period, please submit before class:
+If you aren't in the presenting group during a given class period, please prepare:
   1. A new title for either one of the papers and/or a new name for an algorithm proposed in either paper
   2. At least one question about either paper - could be something you're confused about or something you'd like to hear discussed more.
   3. One idea for a missing experiment.
