@@ -45,7 +45,7 @@ This seminar is organized around the different "roles" students play each week. 
 
 #### Non-presenter assignment
 
-If you aren't in the presenting group during a given class period, please prepare the following:
+If you aren't in the presenting group during a given class period, please prepare the following and **send it via email**:
 
   - 1. A new title for either one of the papers and/or a new name for an algorithm proposed in either paper
   - 2. At least one question about either paper - could be something you're confused about or something you'd like to hear discussed more.
@@ -62,7 +62,7 @@ If you miss a class without completing the corresponding assignment, you'll get 
 
 If you miss a class where you are in a "presenting" role for that session, you must still create the presentation (2-pager) for that role **before** the class.
 
-If you miss a class where you'd be in a "non-presenting" role, to get credit for that session you need to **complete** the non-presenting assignment and send it to me before the start of class.
+If you miss a class where you'd be in a "non-presenting" role, to get credit for that session you need to **complete** the non-presenting assignment and send it to me **before** the start of class.
 
 There's really no way to accept late work for the readings since it's vital that we're all reading the same papers at the same time.
 
